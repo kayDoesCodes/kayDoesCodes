@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @kayDoesCodes
-- 👀 I’m interested in web3
+- 👀 I’m interested in Tech
 - 🌱 I’m currently learning javascript
 - 💞️ I’m looking to collaborate on future ground breaking project 
 - 📫 How to reach me via email dpeakyblinds6@gmail.com
