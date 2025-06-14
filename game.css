@@ -19,7 +19,7 @@ h1{
   font-weight: 800;
 }
 
-.reset{
+.reset, #auto{
   width: 50%;
   padding: 10px;
   border-radius: 10px;
@@ -57,14 +57,24 @@ button:hover{
   color: white;
 }
 
+#auto{
+  background-color: chocolate;
+}
+
 #win, #lose{
-  width: 50%;
   background-color: black;
   color: white;
   text-align: center;
   padding: 10px;
   border-radius: 10px;
   font-weight: 700;
+}
+
+.scores{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 img{
@@ -74,6 +84,10 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.js-img1{
+  width: 170px;
 }
 
 .texts{
@@ -97,17 +111,21 @@ img{
     height: 80px;
   }
 
+  .js-img1{
+    width: 127px;
+  }
+
   h1{
     font-size: 20px;
   }
 
   .texts p{
-    font-size: 12px;
-    padding: 5px;
+    font-size: 13px;
+    padding: 8px;
   }
 
-  .reset{
-    width: 80%;
+  .reset, #auto{
+    width: 50%;
     font-size: 12px;
   }
 }
