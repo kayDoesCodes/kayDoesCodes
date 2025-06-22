@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="game.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coin Game</title>
+</head>
+<body>
+  <h1>🎮Coin Flip Game🎮</h1>
+  
+  <div class="game">
+    <button id="heads" class="heads">Heads<img src="images/close-up-coins-isolated_23-2151337796.png" class="js-img1"></button>
+    <button id="tails" class="tails">Tails<img src="images/close-up-coins-isolated_23-2151337794.png" class="js-img2"></button>
+  </div>
+
+  <button id="reset" class="reset">⚙ Reset ⚙</button>
+  <button id="auto" class="js-auto-play-btn">Auto Play</button>
+
+  <div class="texts">
+    <p class="js-guess"></p>
+    <p class="js-result"></p>
+  </div>
+  <div class="scores">
+    <p class="js-winpoints" id="win">
+      Wins : 0
+    </p>
+    <p class="js-losepoints" id="lose">
+      Losses : 0
+    </p>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

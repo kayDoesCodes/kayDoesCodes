@@ -1,0 +1,595 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100%;
+  height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: black;
+}
+
+.container{
+  margin: 20px 60px;
+  color: white;
+}
+
+.head{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 70px;
+}
+
+.head h1{
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.head h1 i{
+  color: rgb(63, 17, 170);
+  font-size: 20px;
+  position: absolute;
+  top: 23px;
+  left: 195px;
+}
+
+.nav-links ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+
+li{
+  list-style: none;
+}
+
+li a{
+  text-decoration: none;
+  color: rgb(102, 102, 102);
+}
+
+li a:hover{
+  color: white;
+}
+
+.head .login-btn{
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid rgb(105, 105, 105);
+  background: transparent;
+  color: white;
+}
+
+.login-btn:hover{
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero{
+  margin-top: 70px;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+}
+
+.hero h1{
+  font-size: 55px;
+}
+
+.hero p{
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.hero .hero-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.hero-gradient{
+  background-image: radial-gradient(rgb(115, 106, 194)
+  ,rgb(47, 41, 99), black 75%);
+  width: 100%;
+}
+
+.start-btn, .star-btn{
+  width: 20%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.start-btn{
+  background: linear-gradient(90deg, rgb(63, 17, 170), rgba(129, 70, 240, 0.8));
+  color: white;
+}
+
+.start-btn:hover{
+  scale: 1.2;
+  transition: all 0.3s ease-in-out;
+}
+
+.star-btn{
+  background-color: rgb(51, 51, 51);
+  color: white;
+  border: 1px solid rgb(121, 121, 121);
+}
+
+.star-btn:hover{
+  scale: 1.2;
+  transition: all 0.3s ease-in-out;
+}
+
+.img-hero{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.img-hero img{
+  width: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgb(121, 121, 121);
+}
+
+.sponsors{
+  text-align: center;
+  margin-top: 70px;
+}
+
+.sponsors .para{
+  font-size: 25px;
+}
+
+.companies{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  margin-top: 20px;
+}
+
+.companies img{
+  width: 200px;
+}
+
+.col-n-org{
+  text-align: center;
+  margin-top: 100px;
+} 
+
+.col-n-org .col{
+  border: 1px solid rgb(87, 87, 87);
+  margin: 0px 500px;
+  border-radius: 20px;
+  padding: 5px 0px;
+  background: linear-gradient(50deg, rgba(255, 255, 255, 0.178), black);
+}
+
+.intern{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.intern img{
+  width: 500px;
+  border-radius: 10px;
+}
+
+.web{
+  text-align: left;
+  position: relative;
+}
+
+.web p i{
+  color: yellow;
+}
+
+.web h3{
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.more{
+  text-align: center;
+  margin-top: 120px;
+}
+
+.more h3{
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.features{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.features h4{
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.features i{
+  font-size: 40px;
+  background-color: rgba(66, 0, 189, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.features .feat{
+  background-color: rgb(36, 33, 63);
+  border-radius: 10px;
+  padding: 10px 0px;
+}
+
+.explore{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.explore h3{
+  font-size: 30px;
+}
+
+.use{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+.use div{
+  background-color: transparent;
+  border: 1px solid rgb(87, 87, 87);
+  width: 20%;
+  padding: 15px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.use i{
+  font-size: 50px;
+}
+
+.use div:hover{
+  background-color: rgba(66, 0, 189, 0.8);
+  transition: all 0.3s ease-in-out;
+  border: transparent;
+}
+
+.cases{
+  display: grid;
+  grid-template-columns: 500px 500px;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  column-gap: 100px;
+  row-gap: 15px;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.cases span h4{
+  font-size: 30px;
+}
+
+.cases .case{
+  display: flex;
+  gap: 10px;
+  position: relative;
+  left: 100px;
+}
+
+.case i{
+  font-size: 50px;
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 50%;
+  position: absolute;
+  left: -70px;
+  top: 10px;
+}
+
+.plans{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.plans-btn{
+  position: relative;
+}
+
+.buts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 1px;
+  border-radius: 20px;
+  border: 1px solid rgba(73, 73, 73, 0.521);
+  color: white;
+  margin: 0px 450px;
+}
+
+.plans-btn button{
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  width: 50%;
+}
+
+.plans-btn button:hover{
+  background-color: rgb(102, 37, 255);
+  border: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.plans-btn p{
+  position: absolute;
+  right: 430px;
+  top: -20px;
+  transform: rotate(20deg);
+  background-color: red;
+  width: 5%;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.plans h3{
+  font-size: 50px;
+  margin-top: 25px;
+}
+
+.plans .available-plans{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.available-plans .free-plan{
+  border: 1px solid rgba(73, 73, 73, 0.521);
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 65px;
+  border-radius: 20px;
+  margin-bottom: 5px;
+}
+
+.txt-one{
+  color: blue;
+  margin-top: 20px;
+}
+
+.txt-two{
+  font-size: 40px;
+}
+
+.free-plan button{
+  padding: 5px 30px;
+  border-radius: 20px;
+  border: 1px solid rgb(131, 129, 129);
+  background: linear-gradient(to top left, rgba(215, 156, 255, 0.234), rgba(38, 4, 51, 0.4));
+  color: white;
+  box-shadow: 0px 0px 70px 2px rgba(183, 95, 255, 0.404);
+  margin-top: 10px;
+  transition:  0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.free-plan button:hover{
+  background: linear-gradient(to left, rgba(165, 29, 255, 0.849), rgba(64, 7, 87, 0.555));
+  border: 1px solid black;
+}
+
+.txt{
+  text-align: left;
+  line-height: 26px;
+  margin-top: 20px;
+}
+
+.pay-plan{
+  border: 1px solid rgba(73, 73, 73, 0.521);
+  padding: 50px 25px;
+  border-radius: 20px;
+  background: linear-gradient(to top left, rgba(255, 255, 255, 0.192), rgba(255, 255, 255, 0.062),rgba(0, 0, 0, 0.178),rgba(255, 255, 255, 0.137));
+}
+
+.pay-plan span{
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.pay-plan .mont{
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.pay-plan button{
+  padding: 7px 60px;
+  border-radius: 20px;
+  border: 1px solid rgb(131, 129, 129);
+  background: linear-gradient(to top left, rgba(215, 156, 255, 0.234), rgba(38, 4, 51, 0.4));
+  color: white;
+  box-shadow: 0px 0px 70px 2px rgba(183, 95, 255, 0.404);
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+.pay-plan button:hover{
+  background: linear-gradient(to left, rgba(165, 29, 255, 0.849), rgba(64, 7, 87, 0.555));
+  transition:  0.3s ease-in-out;
+  border: 1px solid black;
+}
+
+.available-plans .custom-plan{
+  border: 1px solid rgba(73, 73, 73, 0.521);
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.custom-plan button{
+  padding: 5px 30px;
+  border-radius: 20px;
+  border: 1px solid rgb(131, 129, 129);
+  background: linear-gradient(to top left, rgba(215, 156, 255, 0.234), rgba(38, 4, 51, 0.4));
+  color: white;
+  box-shadow: 0px 0px 70px 2px rgba(183, 95, 255, 0.404);
+  margin-top: 10px;
+  transition:  0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.custom-plan button:hover{
+  background: linear-gradient(to left, rgba(165, 29, 255, 0.849), rgba(64, 7, 87, 0.555));
+  border: 1px solid black;
+}
+
+.QnA{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.QnA h3{
+  font-size: 50px;
+}
+
+.ques{
+  background: linear-gradient(to top left, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.068), rgba(0, 0, 0, 0.13), rgba(223, 155, 255, 0.308));
+  padding: 40px;
+  font-size: 20px;
+  line-height: 60px;
+  margin-left: 160px;
+  margin-right: 160px;
+  margin-top: 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.164);
+}
+
+.QnA{
+  background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.116),rgba(0, 0, 0, 0.075),rgba(0, 0, 0, 0.151), rgba(134, 79, 145, 0.082),black);
+}
+
+.ques p{
+  text-align: left;
+}
+
+.QnA .link{
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.journey{
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.journey h3{
+  font-size: 45px;
+}
+
+.journey p{
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.journey button{
+  margin-top: 15px;
+  width: 15%;
+}
+
+.one-btn{
+  background: linear-gradient(90deg, rgb(63, 17, 170), rgba(129, 70, 240, 0.8));
+  color: white;
+  border: 1px solid rgba(95, 95, 95, 0.288);
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.one-btn:hover{
+  background: black;
+  color: white;
+  border: 1px solid white;
+  transition: all 0.3s ease-in-out;
+}
+
+.two-btn{
+  background-color: rgb(51, 51, 51);
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.two-btn:hover{
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 40px;
+  padding: 20px;
+  gap: 70px;
+}
+
+.foot-one i{
+  color: blue;
+}
+
+.foot-two h4{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.foot-two p{
+  cursor: pointer;
+  line-height: 25px;
+}
+
+.foot-two p:hover{
+  color: purple;
+  transition: all 0.3s ease-in-out;
+}
+
+.foot-three button{
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.features .bulk{
+  padding: 20px;
+}
